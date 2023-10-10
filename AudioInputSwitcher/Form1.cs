@@ -29,10 +29,13 @@ namespace AudioInputSwitcher
 
             // Set inputBox1 as the default audio input device when the form loads.
             input1Device = GetDeviceByName(inputBox1.SelectedItem as string);
+
             if (input1Device != null)
             {
                 SetDefaultAudioInputDevice(input1Device);
             }
+
+
         }
 
         private void PopulateInputDevices(ComboBox comboBox)
